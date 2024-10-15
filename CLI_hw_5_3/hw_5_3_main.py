@@ -67,15 +67,9 @@ def main():
         elif command == "add":
             print(add_contact(args, contacts))
         elif command == "change":
-            if len(args) != 2:
-                print("Invalid command. Usage: change [name] [new phone number]")
-            else:
-                print(change_contact(args, contacts))
+            print(change_contact(args, contacts))
         elif command == "phone":
-            if len(args) != 1:
-                print("Invalid command. Usage: phone [name]")
-            else:
-                print(show_phone(args[0], contacts))
+            print(show_phone(args[0], contacts))
         elif command == "all":
             print(show_all(contacts))  # Викликаємо функцію show_all
         else:
